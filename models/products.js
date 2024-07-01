@@ -1,12 +1,13 @@
 class Products {
-  constructor(parent, products) {
+  constructor(parent, products, cart) {
     this.parent = parent;
-    this.Products = products;
+    this.products = products;
+    this.cart = cart;
     this.parent.addEventListener("click", this);
   }
 
   showProducts() {
-    this.Products.forEach((product) => this.createCard(product));
+    this.products.forEach((product) => this.createCard(product));
   }
 
   createCard(data) {
@@ -53,8 +54,10 @@ class Products {
   }
 
   addToCart(id) {
-    console.log(id);
+    const product = this.products.find((item) => item.id === +id);
+    this.cart.products.push(product);
+    this.cart.showProducts()
   }
 }
 
-export { Products };
+export default Products;
