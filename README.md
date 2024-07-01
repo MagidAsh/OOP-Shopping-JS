@@ -1,0 +1,1 @@
+The store website project developed in an object-oriented way, which has a list of products, as well as a shopping cart with the possibility of adding or subtracting each product and even deleting the product, as well as showing the total price.
