@@ -36,7 +36,7 @@ main {
 }
 
 #products > div {
-  width: 320px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,7 @@ main {
 }
 
 #products img {
-  width: 300px;
+  width: 260px;
   border-radius: 25px;
 }
 
@@ -109,7 +109,7 @@ main {
   margin-bottom: 30px;
 }
 #cart-list {
-  width: 330px;
+  width: 290px;
 }
 
 #cart-list h5 {
@@ -144,7 +144,7 @@ main {
 #cart-info h4 {
   color: var(--color-primary);
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #cart-info p {
